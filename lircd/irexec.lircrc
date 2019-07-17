@@ -1,0 +1,40 @@
+begin
+prog = irexec
+button = KEY_NEXTSONG
+config = /usr/bin/curl "http://127.0.0.1:3000/api/v1/commands/?cmd=next"
+end
+begin
+prog = irexec
+button = KEY_PLAY
+config = /usr/bin/curl "http://127.0.0.1:3000/api/v1/commands/?cmd=play"
+end
+begin
+prog = irexec
+button = KEY_PLAYPAUSE
+config = /usr/bin/curl "http://127.0.0.1:3000/api/v1/commands/?cmd=toggle"
+end
+begin
+prog = irexec
+button = KEY_POWER
+config = sudo shutdown -h now
+end
+begin
+prog = irexec
+button = KEY_PREVIOUSSONG
+config = /usr/bin/curl "http://127.0.0.1:3000/api/v1/commands/?cmd=prev"
+end
+begin
+prog = irexec
+button = KEY_REFRESH
+config = /usr/bin/curl "http://127.0.0.1:3000/api/v1/commands/?cmd=repeat"
+end
+begin
+prog = irexec
+button = KEY_SHUFFLE
+config = /usr/bin/curl "http://127.0.0.1:3000/api/v1/commands/?cmd=random"
+end
+begin
+prog = irexec
+button = KEY_STOP
+config = /usr/bin/curl "http://127.0.0.1:3000/api/v1/commands/?cmd=stop"
+end
